@@ -6,6 +6,7 @@ body {
   height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
+  font-size: 1.25rem;
 }
 
 .tab-container {
@@ -15,10 +16,13 @@ body {
 
 .tab-header {
   display: flex;
+  border-bottom: 1px solid #ccc;
 }
 
 .btn {
-  width: 33.3%;
+  position: relative;
+  top: 1px;
+  /* width: 33.3%; */
   background-color: transparent;
   border: none;
   outline: none;
@@ -39,4 +43,8 @@ body {
 
 .tab-content {
   display: none;
+}
+
+.tab-content.active {
+  display: block;
 }
